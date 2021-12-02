@@ -46,3 +46,6 @@ def index_post():
         original_text=original_text,
         target_language=target_language
     )
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html')
